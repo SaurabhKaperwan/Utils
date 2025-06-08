@@ -139,7 +139,7 @@ async function main() {
   const providers = urlsJson();
   let hasChanges = false;
 
-  const SKIP_KEYS = new Set(['nfverifyurl', 'gojo']);
+  const SKIP_KEYS = new Set(['nfverifyurl']);
   // Process each provider
   for (const [name, url] of Object.entries(providers)) {
     if (SKIP_KEYS.has(name)) {
