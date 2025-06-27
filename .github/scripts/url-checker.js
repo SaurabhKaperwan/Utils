@@ -34,7 +34,7 @@ function hasTrailingSlash(url) {
 async function checkUrl(url) {
   try {
     // Set timeout to 10 seconds to avoid hanging
-    const response = await axios.head(url, {
+    const response = await axios.head("https://thingproxy.freeboard.io/fetch/" + url, {
       maxRedirects: 0,
       timeout: 10000,
       validateStatus: status => true
