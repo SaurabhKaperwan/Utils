@@ -144,13 +144,13 @@ async function main() {
   const providers = urlsJson();
   let hasChanges = false;
 
-  const SKIP_KEYS = new Set(['nfverifyurl']);
+  // const SKIP_KEYS = new Set(['nfverifyurl']);
   // Process each provider
   for (const [name, url] of Object.entries(providers)) {
-    if (SKIP_KEYS.has(name)) {
-      console.log(`⏩ Skipping ${name} (${url}) as configured`);
-      continue;
-    }
+    // if (SKIP_KEYS.has(name)) {
+    //   console.log(`⏩ Skipping ${name} (${url}) as configured`);
+    //   continue;
+    // }
 
     console.log(`Checking ${name} (${url})...`);
 
