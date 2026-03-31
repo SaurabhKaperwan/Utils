@@ -144,7 +144,7 @@ async function main() {
   const providers = urlsJson();
   let hasChanges = false;
 
-  const SKIP_KEYS = new Set(['nfmirror', 'nfmirror2','vcloud']);
+  const SKIP_KEYS = new Set(['nfmirror', 'nfmirror2','vcloud', 'hianime']);
   // Process each provider
   for (const [name, url] of Object.entries(providers)) {
 
